@@ -1,0 +1,21 @@
+{
+  "model": "distilbert/distilbert-base-multilingual-cased",
+  "revision": "45c032ab32cc946ad88a166f7cb282f58c753c2e",
+  "epochs": 1,
+  "sequence_length": 256,
+  "batch_size": 16,
+  "gradient_accumulation": 2,
+  "learning_rate": 3e-05,
+  "class_order": [
+    "human",
+    "ai",
+    "fusion"
+  ],
+  "gpu": "Tesla T4",
+  "torch": "2.14.1+cu130",
+  "device": "cuda",
+  "initial_grad_scale": 65536,
+  "training_text_view": "First 254 content tokens plus special tokens",
+  "chunking": "Mean class probabilities over unique start/middle/end windows, 254 content tokens each",
+  "compute_limit": "One fixed epoch per CV fold and final model; no holdout-based tuning"
+}

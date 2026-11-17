@@ -1,0 +1,138 @@
+Tokenization development: 0/40000
+Tokenization development: 10240/40000
+Tokenization development: 20480/40000
+Tokenization development: 30720/40000
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794913106.252636    1927 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794913109.191897    1927 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert/distilbert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight', 'pre_classifier.bias', 'pre_classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+{"stage": "smoke", "epoch": 1, "batch": 1, "batches": 2, "mean_loss": 1.133544921875, "elapsed_seconds": 1.2621387220000315, "gpu_allocated_bytes": 1521148928}
+Inference smoke: 1/2 batches
+GPU SMOKE TEST PASSED
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert/distilbert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight', 'pre_classifier.bias', 'pre_classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+{"stage": "fold0", "epoch": 1, "batch": 1, "batches": 1667, "mean_loss": 1.1280517578125, "elapsed_seconds": 0.07283258000006754, "gpu_allocated_bytes": 2745040384}
+{"stage": "fold0", "epoch": 1, "batch": 101, "batches": 1667, "mean_loss": 1.042684271784112, "elapsed_seconds": 10.80865178700003, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold0", "epoch": 1, "batch": 201, "batches": 1667, "mean_loss": 0.887165876170296, "elapsed_seconds": 21.589860481000073, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold0", "epoch": 1, "batch": 301, "batches": 1667, "mean_loss": 0.7836674487471976, "elapsed_seconds": 32.504973076000056, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold0", "epoch": 1, "batch": 401, "batches": 1667, "mean_loss": 0.7209919955665036, "elapsed_seconds": 43.513246811000045, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold0", "epoch": 1, "batch": 501, "batches": 1667, "mean_loss": 0.6668487841973524, "elapsed_seconds": 54.59869345100003, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold0", "epoch": 1, "batch": 601, "batches": 1667, "mean_loss": 0.6314149287695099, "elapsed_seconds": 65.77080604900004, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold0", "epoch": 1, "batch": 701, "batches": 1667, "mean_loss": 0.6077241353403655, "elapsed_seconds": 77.009722324, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold0", "epoch": 1, "batch": 801, "batches": 1667, "mean_loss": 0.5889380909828063, "elapsed_seconds": 88.379334008, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold0", "epoch": 1, "batch": 901, "batches": 1667, "mean_loss": 0.5743326119392217, "elapsed_seconds": 99.90203181200002, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold0", "epoch": 1, "batch": 1001, "batches": 1667, "mean_loss": 0.5591333705585796, "elapsed_seconds": 111.51971953600003, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold0", "epoch": 1, "batch": 1101, "batches": 1667, "mean_loss": 0.5448410299883226, "elapsed_seconds": 123.15712250600006, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold0", "epoch": 1, "batch": 1201, "batches": 1667, "mean_loss": 0.5329954764130312, "elapsed_seconds": 134.91211710100004, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold0", "epoch": 1, "batch": 1301, "batches": 1667, "mean_loss": 0.522885941341233, "elapsed_seconds": 146.846767967, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold0", "epoch": 1, "batch": 1401, "batches": 1667, "mean_loss": 0.5145718830981313, "elapsed_seconds": 158.94144454700006, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold0", "epoch": 1, "batch": 1501, "batches": 1667, "mean_loss": 0.5082638756105854, "elapsed_seconds": 171.19241421499999, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold0", "epoch": 1, "batch": 1601, "batches": 1667, "mean_loss": 0.5007104515508143, "elapsed_seconds": 183.52224836000005, "gpu_allocated_bytes": 3172087808}
+Inference fold0: 1/560 batches
+Inference fold0: 201/560 batches
+Inference fold0: 401/560 batches
+TRANSFORMER FOLD COMPLETE [{"model": "head", "fold": 0, "macro_f1": 0.7501052129480473}, {"model": "chunks", "fold": 0, "macro_f1": 0.7812457914143113}]
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert/distilbert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight', 'pre_classifier.bias', 'pre_classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+{"stage": "fold1", "epoch": 1, "batch": 1, "batches": 1667, "mean_loss": 1.0859375, "elapsed_seconds": 0.0851120649999757, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold1", "epoch": 1, "batch": 101, "batches": 1667, "mean_loss": 1.018261144656946, "elapsed_seconds": 12.275164031000031, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold1", "epoch": 1, "batch": 201, "batches": 1667, "mean_loss": 0.8604980297942659, "elapsed_seconds": 24.50975495600005, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold1", "epoch": 1, "batch": 301, "batches": 1667, "mean_loss": 0.762927074369006, "elapsed_seconds": 36.76297717800003, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold1", "epoch": 1, "batch": 401, "batches": 1667, "mean_loss": 0.7070011462356681, "elapsed_seconds": 49.05089567499999, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold1", "epoch": 1, "batch": 501, "batches": 1667, "mean_loss": 0.6682394992805527, "elapsed_seconds": 61.28794355499997, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold1", "epoch": 1, "batch": 601, "batches": 1667, "mean_loss": 0.6413547988739268, "elapsed_seconds": 73.49129952299995, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold1", "epoch": 1, "batch": 701, "batches": 1667, "mean_loss": 0.622171625771298, "elapsed_seconds": 85.68208246899997, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold1", "epoch": 1, "batch": 801, "batches": 1667, "mean_loss": 0.5980692603317241, "elapsed_seconds": 97.93550627000002, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold1", "epoch": 1, "batch": 901, "batches": 1667, "mean_loss": 0.581047271914805, "elapsed_seconds": 110.24821016399994, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold1", "epoch": 1, "batch": 1001, "batches": 1667, "mean_loss": 0.5653170219787231, "elapsed_seconds": 122.53330191199996, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold1", "epoch": 1, "batch": 1101, "batches": 1667, "mean_loss": 0.5491824959972358, "elapsed_seconds": 134.799004082, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold1", "epoch": 1, "batch": 1201, "batches": 1667, "mean_loss": 0.5366296786054982, "elapsed_seconds": 147.056015473, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold1", "epoch": 1, "batch": 1301, "batches": 1667, "mean_loss": 0.5258302712422165, "elapsed_seconds": 159.2541877650001, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold1", "epoch": 1, "batch": 1401, "batches": 1667, "mean_loss": 0.519013135200054, "elapsed_seconds": 171.50946754999995, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold1", "epoch": 1, "batch": 1501, "batches": 1667, "mean_loss": 0.5122675916340096, "elapsed_seconds": 183.73033351000004, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold1", "epoch": 1, "batch": 1601, "batches": 1667, "mean_loss": 0.5047347968552427, "elapsed_seconds": 195.94512602200007, "gpu_allocated_bytes": 3172087808}
+Inference fold1: 1/562 batches
+Inference fold1: 201/562 batches
+Inference fold1: 401/562 batches
+TRANSFORMER FOLD COMPLETE [{"model": "head", "fold": 1, "macro_f1": 0.7512221248018172}, {"model": "chunks", "fold": 1, "macro_f1": 0.7802174470337951}]
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert/distilbert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight', 'pre_classifier.bias', 'pre_classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+{"stage": "fold2", "epoch": 1, "batch": 1, "batches": 1667, "mean_loss": 1.11651611328125, "elapsed_seconds": 0.07507483500012313, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold2", "epoch": 1, "batch": 101, "batches": 1667, "mean_loss": 1.0302026578695467, "elapsed_seconds": 12.19692275400007, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold2", "epoch": 1, "batch": 201, "batches": 1667, "mean_loss": 0.8547712582260815, "elapsed_seconds": 24.449154543000077, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold2", "epoch": 1, "batch": 301, "batches": 1667, "mean_loss": 0.7599404515618106, "elapsed_seconds": 36.77683343400008, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold2", "epoch": 1, "batch": 401, "batches": 1667, "mean_loss": 0.7115397774370531, "elapsed_seconds": 49.14737486100012, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold2", "epoch": 1, "batch": 501, "batches": 1667, "mean_loss": 0.6685129373135443, "elapsed_seconds": 61.37046413999997, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold2", "epoch": 1, "batch": 601, "batches": 1667, "mean_loss": 0.6378611082245228, "elapsed_seconds": 73.55802881099999, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold2", "epoch": 1, "batch": 701, "batches": 1667, "mean_loss": 0.6118103900071388, "elapsed_seconds": 85.72487949200013, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold2", "epoch": 1, "batch": 801, "batches": 1667, "mean_loss": 0.5855507552995812, "elapsed_seconds": 97.96031937800012, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold2", "epoch": 1, "batch": 901, "batches": 1667, "mean_loss": 0.5695346181056608, "elapsed_seconds": 110.25913611100009, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold2", "epoch": 1, "batch": 1001, "batches": 1667, "mean_loss": 0.5559960768058464, "elapsed_seconds": 122.57098147600004, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold2", "epoch": 1, "batch": 1101, "batches": 1667, "mean_loss": 0.5454042369295098, "elapsed_seconds": 134.82873550199997, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold2", "epoch": 1, "batch": 1201, "batches": 1667, "mean_loss": 0.534200182465292, "elapsed_seconds": 147.01311118400008, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold2", "epoch": 1, "batch": 1301, "batches": 1667, "mean_loss": 0.5258506563056166, "elapsed_seconds": 159.2083442810001, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold2", "epoch": 1, "batch": 1401, "batches": 1667, "mean_loss": 0.5159337284052737, "elapsed_seconds": 171.43562991099998, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold2", "epoch": 1, "batch": 1501, "batches": 1667, "mean_loss": 0.5094279361358887, "elapsed_seconds": 183.68044371400015, "gpu_allocated_bytes": 3172087808}
+{"stage": "fold2", "epoch": 1, "batch": 1601, "batches": 1667, "mean_loss": 0.5027143505496728, "elapsed_seconds": 195.96792672200013, "gpu_allocated_bytes": 3172087808}
+Inference fold2: 1/563 batches
+Inference fold2: 201/563 batches
+Inference fold2: 401/563 batches
+TRANSFORMER FOLD COMPLETE [{"model": "head", "fold": 2, "macro_f1": 0.7435160481509245}, {"model": "chunks", "fold": 2, "macro_f1": 0.7651130928519244}]
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert/distilbert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight', 'pre_classifier.bias', 'pre_classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+{"stage": "final", "epoch": 1, "batch": 1, "batches": 2500, "mean_loss": 1.096771240234375, "elapsed_seconds": 0.07644630799995866, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 101, "batches": 2500, "mean_loss": 1.0721657630240564, "elapsed_seconds": 12.284865003999812, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 201, "batches": 2500, "mean_loss": 0.922250719212774, "elapsed_seconds": 24.488269487000025, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 301, "batches": 2500, "mean_loss": 0.8056890861536578, "elapsed_seconds": 36.76028361899989, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 401, "batches": 2500, "mean_loss": 0.7311130723453817, "elapsed_seconds": 49.01748973199983, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 501, "batches": 2500, "mean_loss": 0.6775323269134034, "elapsed_seconds": 61.29274904299996, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 601, "batches": 2500, "mean_loss": 0.6466917138726461, "elapsed_seconds": 73.51468632599995, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 701, "batches": 2500, "mean_loss": 0.6163177395002988, "elapsed_seconds": 85.73844054599999, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 801, "batches": 2500, "mean_loss": 0.595175258526939, "elapsed_seconds": 97.95662557299988, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 901, "batches": 2500, "mean_loss": 0.5761641838177459, "elapsed_seconds": 110.185278745, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 1001, "batches": 2500, "mean_loss": 0.5633481880287071, "elapsed_seconds": 122.4355629659999, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 1101, "batches": 2500, "mean_loss": 0.5504524593024119, "elapsed_seconds": 134.678761033, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 1201, "batches": 2500, "mean_loss": 0.540687831414927, "elapsed_seconds": 146.9227110759998, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 1301, "batches": 2500, "mean_loss": 0.530485250599837, "elapsed_seconds": 159.17083626299996, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 1401, "batches": 2500, "mean_loss": 0.5211374717980602, "elapsed_seconds": 171.45013124000002, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 1501, "batches": 2500, "mean_loss": 0.5142105136371945, "elapsed_seconds": 183.6697606759999, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 1601, "batches": 2500, "mean_loss": 0.507632211474312, "elapsed_seconds": 195.8946468649999, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 1701, "batches": 2500, "mean_loss": 0.5005954710754628, "elapsed_seconds": 208.0815780139999, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 1801, "batches": 2500, "mean_loss": 0.4940570337053539, "elapsed_seconds": 220.28958360499996, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 1901, "batches": 2500, "mean_loss": 0.4881119546546615, "elapsed_seconds": 232.55086696199987, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 2001, "batches": 2500, "mean_loss": 0.4840975977193708, "elapsed_seconds": 244.8346793999999, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 2101, "batches": 2500, "mean_loss": 0.47893035545172097, "elapsed_seconds": 257.10652259099993, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 2201, "batches": 2500, "mean_loss": 0.47460700706263553, "elapsed_seconds": 269.3566971779999, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 2301, "batches": 2500, "mean_loss": 0.4715660148887518, "elapsed_seconds": 281.61071599799993, "gpu_allocated_bytes": 3172087808}
+{"stage": "final", "epoch": 1, "batch": 2401, "batches": 2500, "mean_loss": 0.4675596094985447, "elapsed_seconds": 293.838059619, "gpu_allocated_bytes": 3172087808}
+Tokenization holdout: 0/54469
+Tokenization holdout: 10240/54469
+Tokenization holdout: 20480/54469
+Tokenization holdout: 30720/54469
+Tokenization holdout: 40960/54469
+Tokenization holdout: 51200/54469
+Inference holdout: 1/2296 batches
+Inference holdout: 201/2296 batches
+Inference holdout: 401/2296 batches
+Inference holdout: 601/2296 batches
+Inference holdout: 801/2296 batches
+Inference holdout: 1001/2296 batches
+Inference holdout: 1201/2296 batches
+Inference holdout: 1401/2296 batches
+Inference holdout: 1601/2296 batches
+Inference holdout: 1801/2296 batches
+Inference holdout: 2001/2296 batches
+Inference holdout: 2201/2296 batches
+Tokenization test: 0/25000
+Tokenization test: 10240/25000
+Tokenization test: 20480/25000
+Inference test: 1/1027 batches
+Inference test: 201/1027 batches
+Inference test: 401/1027 batches
+Inference test: 601/1027 batches
+Inference test: 801/1027 batches
+Inference test: 1001/1027 batches
+TRANSFORMER COMPLETE {"head": 0.7482811286335963, "chunks": 0.7755254437666769}

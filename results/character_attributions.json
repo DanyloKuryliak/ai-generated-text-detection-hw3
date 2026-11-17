@@ -1,0 +1,891 @@
+{
+  "method": "Exact TF-IDF contribution to predicted-minus-runner-up logit",
+  "scope": "Character model only; correlated lexical evidence, not causal authorship evidence",
+  "examples": [
+    {
+      "id": "b730ee",
+      "true_label": "fusion",
+      "prediction": "fusion",
+      "runner_up": "human",
+      "logit_difference": 3.0454766750335693,
+      "bias_difference": -1.4713265895843506,
+      "sum_feature_contributions": 4.516810894012451,
+      "top_features": [
+        {
+          "feature": " mü",
+          "contribution": 0.04776054620742798
+        },
+        {
+          "feature": "iele",
+          "contribution": -0.05067489668726921
+        },
+        {
+          "feature": "ank",
+          "contribution": -0.05120809003710747
+        },
+        {
+          "feature": "müs",
+          "contribution": 0.05191897228360176
+        },
+        {
+          "feature": "müss",
+          "contribution": 0.05203034728765488
+        },
+        {
+          "feature": " müss",
+          "contribution": 0.052122581750154495
+        },
+        {
+          "feature": " müs",
+          "contribution": 0.052122581750154495
+        },
+        {
+          "feature": "müsse",
+          "contribution": 0.052844755351543427
+        },
+        {
+          "feature": "nur",
+          "contribution": 0.056130848824977875
+        },
+        {
+          "feature": " nur",
+          "contribution": 0.057142481207847595
+        },
+        {
+          "feature": "nur ",
+          "contribution": 0.05998457223176956
+        },
+        {
+          "feature": " nur ",
+          "contribution": 0.06016315892338753
+        }
+      ]
+    },
+    {
+      "id": "4d0b8c",
+      "true_label": "fusion",
+      "prediction": "fusion",
+      "runner_up": "ai",
+      "logit_difference": 1.573776125907898,
+      "bias_difference": -2.8321352005004883,
+      "sum_feature_contributions": 4.405913352966309,
+      "top_features": [
+        {
+          "feature": "9. ",
+          "contribution": 0.08810945600271225
+        },
+        {
+          "feature": " the",
+          "contribution": 0.08965009450912476
+        },
+        {
+          "feature": " and ",
+          "contribution": 0.09116049110889435
+        },
+        {
+          "feature": "the",
+          "contribution": 0.09854486584663391
+        },
+        {
+          "feature": "n’t",
+          "contribution": -0.09932742267847061
+        },
+        {
+          "feature": "’t ",
+          "contribution": -0.10172067582607269
+        },
+        {
+          "feature": "n’t ",
+          "contribution": -0.10182812064886093
+        },
+        {
+          "feature": " the ",
+          "contribution": 0.1029592826962471
+        },
+        {
+          "feature": "the ",
+          "contribution": 0.10620459914207458
+        },
+        {
+          "feature": "’s ",
+          "contribution": -0.14244475960731506
+        },
+        {
+          "feature": " ’ ",
+          "contribution": 0.41683343052864075
+        },
+        {
+          "feature": " . ",
+          "contribution": 0.5035043358802795
+        }
+      ]
+    },
+    {
+      "id": "147793",
+      "true_label": "ai",
+      "prediction": "ai",
+      "runner_up": "fusion",
+      "logit_difference": 6.363202095031738,
+      "bias_difference": 2.8321352005004883,
+      "sum_feature_contributions": 3.5310661792755127,
+      "top_features": [
+        {
+          "feature": " of",
+          "contribution": -0.06366169452667236
+        },
+        {
+          "feature": " and ",
+          "contribution": -0.06368094682693481
+        },
+        {
+          "feature": "he ",
+          "contribution": -0.07505775988101959
+        },
+        {
+          "feature": " th",
+          "contribution": -0.07763916254043579
+        },
+        {
+          "feature": " the",
+          "contribution": -0.07915816456079483
+        },
+        {
+          "feature": " appl",
+          "contribution": -0.08448109775781631
+        },
+        {
+          "feature": "the",
+          "contribution": -0.08724165707826614
+        },
+        {
+          "feature": "appli",
+          "contribution": -0.08879022300243378
+        },
+        {
+          "feature": " the ",
+          "contribution": -0.09159016609191895
+        },
+        {
+          "feature": "the ",
+          "contribution": -0.09447711706161499
+        },
+        {
+          "feature": "lican",
+          "contribution": -0.12455934286117554
+        },
+        {
+          "feature": " , ",
+          "contribution": 0.1621326059103012
+        }
+      ]
+    },
+    {
+      "id": "18b6c4",
+      "true_label": "ai",
+      "prediction": "ai",
+      "runner_up": "fusion",
+      "logit_difference": 3.3272905349731445,
+      "bias_difference": 2.8321352005004883,
+      "sum_feature_contributions": 0.49515557289123535,
+      "top_features": [
+        {
+          "feature": "of ",
+          "contribution": -0.05631624907255173
+        },
+        {
+          "feature": "acia",
+          "contribution": -0.05635315179824829
+        },
+        {
+          "feature": " of",
+          "contribution": -0.05769304558634758
+        },
+        {
+          "feature": " the ",
+          "contribution": -0.058780115097761154
+        },
+        {
+          "feature": " and",
+          "contribution": -0.05925390496850014
+        },
+        {
+          "feature": "the ",
+          "contribution": -0.06063288077712059
+        },
+        {
+          "feature": "the",
+          "contribution": -0.06334666907787323
+        },
+        {
+          "feature": " FACS",
+          "contribution": 0.06490402668714523
+        },
+        {
+          "feature": "nd ",
+          "contribution": -0.06528659164905548
+        },
+        {
+          "feature": " and ",
+          "contribution": -0.06826946139335632
+        },
+        {
+          "feature": " FAC",
+          "contribution": 0.07574683427810669
+        },
+        {
+          "feature": ".\" ",
+          "contribution": 0.08102751523256302
+        }
+      ]
+    },
+    {
+      "id": "6d49dc",
+      "true_label": "fusion",
+      "prediction": "fusion",
+      "runner_up": "ai",
+      "logit_difference": 3.6464920043945312,
+      "bias_difference": -2.8321352005004883,
+      "sum_feature_contributions": 6.478618621826172,
+      "top_features": [
+        {
+          "feature": "nd ",
+          "contribution": 0.09257642179727554
+        },
+        {
+          "feature": " th",
+          "contribution": 0.0933656319975853
+        },
+        {
+          "feature": " the",
+          "contribution": 0.09478041529655457
+        },
+        {
+          "feature": " and ",
+          "contribution": 0.10035832226276398
+        },
+        {
+          "feature": "the",
+          "contribution": 0.10691990703344345
+        },
+        {
+          "feature": " the ",
+          "contribution": 0.10931438952684402
+        },
+        {
+          "feature": "the ",
+          "contribution": 0.1127600148320198
+        },
+        {
+          "feature": " text",
+          "contribution": -0.1347062885761261
+        },
+        {
+          "feature": " tex",
+          "contribution": -0.1364358365535736
+        },
+        {
+          "feature": " i ",
+          "contribution": 0.1439216136932373
+        },
+        {
+          "feature": " he ",
+          "contribution": 0.23661869764328003
+        },
+        {
+          "feature": ".\" ",
+          "contribution": -0.28423887491226196
+        }
+      ]
+    },
+    {
+      "id": "e6a7f7",
+      "true_label": "ai",
+      "prediction": "ai",
+      "runner_up": "fusion",
+      "logit_difference": 3.404547691345215,
+      "bias_difference": 2.8321352005004883,
+      "sum_feature_contributions": 0.572414219379425,
+      "top_features": [
+        {
+          "feature": "of ",
+          "contribution": -0.06132471561431885
+        },
+        {
+          "feature": " of",
+          "contribution": -0.0614994652569294
+        },
+        {
+          "feature": " and",
+          "contribution": -0.06387463957071304
+        },
+        {
+          "feature": "he ",
+          "contribution": -0.06446130573749542
+        },
+        {
+          "feature": "nd ",
+          "contribution": -0.06693840026855469
+        },
+        {
+          "feature": "’s ",
+          "contribution": 0.06875625252723694
+        },
+        {
+          "feature": " th",
+          "contribution": -0.0690159946680069
+        },
+        {
+          "feature": " the",
+          "contribution": -0.07029858231544495
+        },
+        {
+          "feature": " and ",
+          "contribution": -0.07359324395656586
+        },
+        {
+          "feature": "the",
+          "contribution": -0.07720828056335449
+        },
+        {
+          "feature": " the ",
+          "contribution": -0.08209273964166641
+        },
+        {
+          "feature": "the ",
+          "contribution": -0.08468032628297806
+        }
+      ]
+    },
+    {
+      "id": "c16e47",
+      "true_label": "fusion",
+      "prediction": "fusion",
+      "runner_up": "human",
+      "logit_difference": 3.588533639907837,
+      "bias_difference": -1.4713265895843506,
+      "sum_feature_contributions": 5.059863090515137,
+      "top_features": [
+        {
+          "feature": "gued ",
+          "contribution": 0.04559483379125595
+        },
+        {
+          "feature": "usio",
+          "contribution": -0.046081364154815674
+        },
+        {
+          "feature": "hasiz",
+          "contribution": 0.046575210988521576
+        },
+        {
+          "feature": "gued",
+          "contribution": 0.04740129038691521
+        },
+        {
+          "feature": "ued",
+          "contribution": 0.04938534274697304
+        },
+        {
+          "feature": "'s ",
+          "contribution": 0.05416208505630493
+        },
+        {
+          "feature": "ublis",
+          "contribution": -0.05824396386742592
+        },
+        {
+          "feature": "ing",
+          "contribution": 0.06070331484079361
+        },
+        {
+          "feature": "ing ",
+          "contribution": 0.06368879228830338
+        },
+        {
+          "feature": " ... ",
+          "contribution": 0.07801349461078644
+        },
+        {
+          "feature": " ..",
+          "contribution": 0.3427734673023224
+        },
+        {
+          "feature": " ...",
+          "contribution": 0.35739296674728394
+        }
+      ]
+    },
+    {
+      "id": "f13e79",
+      "true_label": "fusion",
+      "prediction": "fusion",
+      "runner_up": "human",
+      "logit_difference": 0.8233553171157837,
+      "bias_difference": -1.4713265895843506,
+      "sum_feature_contributions": 2.2946765422821045,
+      "top_features": [
+        {
+          "feature": " This",
+          "contribution": 0.04332882538437843
+        },
+        {
+          "feature": " th",
+          "contribution": 0.04423997551202774
+        },
+        {
+          "feature": " rise",
+          "contribution": -0.045146018266677856
+        },
+        {
+          "feature": "nd ",
+          "contribution": 0.0452423170208931
+        },
+        {
+          "feature": " oi",
+          "contribution": -0.05209459364414215
+        },
+        {
+          "feature": " See ",
+          "contribution": -0.052815742790699005
+        },
+        {
+          "feature": "ing",
+          "contribution": 0.05414940044283867
+        },
+        {
+          "feature": "’s ",
+          "contribution": 0.05519266426563263
+        },
+        {
+          "feature": "ank",
+          "contribution": -0.05702970549464226
+        },
+        {
+          "feature": "See ",
+          "contribution": -0.05769084766507149
+        },
+        {
+          "feature": "ing ",
+          "contribution": 0.05901966989040375
+        },
+        {
+          "feature": " ' ",
+          "contribution": 0.6075106263160706
+        }
+      ]
+    },
+    {
+      "id": "0da9b3",
+      "true_label": "human",
+      "prediction": "human",
+      "runner_up": "fusion",
+      "logit_difference": 4.888607501983643,
+      "bias_difference": 1.4713265895843506,
+      "sum_feature_contributions": 3.417288303375244,
+      "top_features": [
+        {
+          "feature": "ing",
+          "contribution": -0.059016577899456024
+        },
+        {
+          "feature": "ing ",
+          "contribution": -0.06215431168675423
+        },
+        {
+          "feature": " . ",
+          "contribution": -0.06378595530986786
+        },
+        {
+          "feature": " - ",
+          "contribution": -0.0759657472372055
+        },
+        {
+          "feature": "t.’",
+          "contribution": 0.07826220244169235
+        },
+        {
+          "feature": "t.’ ",
+          "contribution": 0.0798083245754242
+        },
+        {
+          "feature": "e.' ",
+          "contribution": 0.09790659695863724
+        },
+        {
+          "feature": "e.'",
+          "contribution": 0.10031825304031372
+        },
+        {
+          "feature": "e.’",
+          "contribution": 0.12541715800762177
+        },
+        {
+          "feature": "e.’ ",
+          "contribution": 0.12553416192531586
+        },
+        {
+          "feature": ".' ",
+          "contribution": 0.46718576550483704
+        },
+        {
+          "feature": ".’ ",
+          "contribution": 0.5265445709228516
+        }
+      ]
+    },
+    {
+      "id": "1ca94d",
+      "true_label": "ai",
+      "prediction": "ai",
+      "runner_up": "fusion",
+      "logit_difference": 7.167885780334473,
+      "bias_difference": 2.8321352005004883,
+      "sum_feature_contributions": 4.335749626159668,
+      "top_features": [
+        {
+          "feature": " and ",
+          "contribution": -0.08806298673152924
+        },
+        {
+          "feature": "t’s ",
+          "contribution": 0.0911988690495491
+        },
+        {
+          "feature": "t’s",
+          "contribution": 0.09165783226490021
+        },
+        {
+          "feature": "nd ",
+          "contribution": -0.09597425907850266
+        },
+        {
+          "feature": "gotta",
+          "contribution": 0.10152047127485275
+        },
+        {
+          "feature": "e! ",
+          "contribution": 0.10425465553998947
+        },
+        {
+          "feature": "otta ",
+          "contribution": 0.12664422392845154
+        },
+        {
+          "feature": "tta ",
+          "contribution": 0.1364414244890213
+        },
+        {
+          "feature": "otta",
+          "contribution": 0.1384042650461197
+        },
+        {
+          "feature": " – ",
+          "contribution": 0.14903739094734192
+        },
+        {
+          "feature": "’s ",
+          "contribution": 0.14998619258403778
+        },
+        {
+          "feature": "s! ",
+          "contribution": 0.15877655148506165
+        }
+      ]
+    },
+    {
+      "id": "defb5c",
+      "true_label": "ai",
+      "prediction": "ai",
+      "runner_up": "fusion",
+      "logit_difference": 2.7867186069488525,
+      "bias_difference": 2.8321352005004883,
+      "sum_feature_contributions": -0.04541832208633423,
+      "top_features": [
+        {
+          "feature": "?\" ",
+          "contribution": 0.06442078948020935
+        },
+        {
+          "feature": "the",
+          "contribution": -0.06500693410634995
+        },
+        {
+          "feature": " the ",
+          "contribution": -0.06635460257530212
+        },
+        {
+          "feature": " – ",
+          "contribution": 0.06689438223838806
+        },
+        {
+          "feature": "said",
+          "contribution": -0.06813909858465195
+        },
+        {
+          "feature": "the ",
+          "contribution": -0.06844612210988998
+        },
+        {
+          "feature": " said",
+          "contribution": -0.06891285628080368
+        },
+        {
+          "feature": "’s ",
+          "contribution": 0.07361540198326111
+        },
+        {
+          "feature": " Miss",
+          "contribution": -0.0963331088423729
+        },
+        {
+          "feature": ",\" ",
+          "contribution": 0.09694071114063263
+        },
+        {
+          "feature": "Miss",
+          "contribution": -0.10376285016536713
+        },
+        {
+          "feature": ".\" ",
+          "contribution": 0.20564168691635132
+        }
+      ]
+    },
+    {
+      "id": "480f10",
+      "true_label": "human",
+      "prediction": "human",
+      "runner_up": "fusion",
+      "logit_difference": 1.8078763484954834,
+      "bias_difference": 1.4713265895843506,
+      "sum_feature_contributions": 0.3365490436553955,
+      "top_features": [
+        {
+          "feature": "enau ",
+          "contribution": -0.06118785962462425
+        },
+        {
+          "feature": "Viele",
+          "contribution": 0.07830862700939178
+        },
+        {
+          "feature": "ank",
+          "contribution": 0.08168143779039383
+        },
+        {
+          "feature": "Dan",
+          "contribution": 0.09594202786684036
+        },
+        {
+          "feature": " Dan",
+          "contribution": 0.0965566337108612
+        },
+        {
+          "feature": "nk. ",
+          "contribution": 0.10997635126113892
+        },
+        {
+          "feature": "nk.",
+          "contribution": 0.11087386310100555
+        },
+        {
+          "feature": "Dank",
+          "contribution": 0.13411854207515717
+        },
+        {
+          "feature": " Dank",
+          "contribution": 0.1343778669834137
+        },
+        {
+          "feature": "ank.",
+          "contribution": 0.13449987769126892
+        },
+        {
+          "feature": "ank. ",
+          "contribution": 0.13472551107406616
+        },
+        {
+          "feature": "Dank.",
+          "contribution": 0.14707191288471222
+        }
+      ]
+    },
+    {
+      "id": "f16ce7",
+      "true_label": "human",
+      "prediction": "human",
+      "runner_up": "fusion",
+      "logit_difference": 0.5808734893798828,
+      "bias_difference": 1.4713265895843506,
+      "sum_feature_contributions": -0.8904554843902588,
+      "top_features": [
+        {
+          "feature": " he ",
+          "contribution": -0.04481670260429382
+        },
+        {
+          "feature": "1. ",
+          "contribution": -0.04712139442563057
+        },
+        {
+          "feature": " th",
+          "contribution": -0.048465024679899216
+        },
+        {
+          "feature": "ocial",
+          "contribution": 0.051587097346782684
+        },
+        {
+          "feature": "ensio",
+          "contribution": -0.05523097142577171
+        },
+        {
+          "feature": "ued ",
+          "contribution": -0.05585944652557373
+        },
+        {
+          "feature": "ing",
+          "contribution": -0.05609780177474022
+        },
+        {
+          "feature": "assat",
+          "contribution": 0.05768396705389023
+        },
+        {
+          "feature": "sion,",
+          "contribution": 0.057741012424230576
+        },
+        {
+          "feature": "ing ",
+          "contribution": -0.05878366902470589
+        },
+        {
+          "feature": "ued",
+          "contribution": -0.07082168012857437
+        },
+        {
+          "feature": "’s ",
+          "contribution": -0.09318280965089798
+        }
+      ]
+    },
+    {
+      "id": "d64349",
+      "true_label": "human",
+      "prediction": "human",
+      "runner_up": "fusion",
+      "logit_difference": 1.6177277565002441,
+      "bias_difference": 1.4713265895843506,
+      "sum_feature_contributions": 0.14640116691589355,
+      "top_features": [
+        {
+          "feature": "'s ",
+          "contribution": -0.06626947969198227
+        },
+        {
+          "feature": " We ",
+          "contribution": -0.06649938225746155
+        },
+        {
+          "feature": "inue ",
+          "contribution": 0.06652259081602097
+        },
+        {
+          "feature": "s, ",
+          "contribution": -0.06724047660827637
+        },
+        {
+          "feature": "emy",
+          "contribution": 0.06793618947267532
+        },
+        {
+          "feature": " are",
+          "contribution": 0.07094302773475647
+        },
+        {
+          "feature": " a ",
+          "contribution": -0.07363074272871017
+        },
+        {
+          "feature": "nd ",
+          "contribution": -0.07375959306955338
+        },
+        {
+          "feature": "y! ",
+          "contribution": -0.07818857580423355
+        },
+        {
+          "feature": "the",
+          "contribution": -0.0783793181180954
+        },
+        {
+          "feature": " th",
+          "contribution": -0.09401243180036545
+        },
+        {
+          "feature": "ank",
+          "contribution": 0.11843963712453842
+        }
+      ]
+    },
+    {
+      "id": "af7726",
+      "true_label": "human",
+      "prediction": "human",
+      "runner_up": "fusion",
+      "logit_difference": 0.5954625606536865,
+      "bias_difference": 1.4713265895843506,
+      "sum_feature_contributions": -0.875866174697876,
+      "top_features": [
+        {
+          "feature": "well.",
+          "contribution": 0.07966925203800201
+        },
+        {
+          "feature": "!!!!!",
+          "contribution": -0.08367616683244705
+        },
+        {
+          "feature": "ing ",
+          "contribution": -0.10888335853815079
+        },
+        {
+          "feature": "ing",
+          "contribution": -0.11305183172225952
+        },
+        {
+          "feature": "hhh",
+          "contribution": -0.12194636464118958
+        },
+        {
+          "feature": "ank",
+          "contribution": 0.12433198094367981
+        },
+        {
+          "feature": " me ",
+          "contribution": -0.14636535942554474
+        },
+        {
+          "feature": "nk. ",
+          "contribution": 0.1674012839794159
+        },
+        {
+          "feature": "nk.",
+          "contribution": 0.16876743733882904
+        },
+        {
+          "feature": "ank.",
+          "contribution": 0.20472992956638336
+        },
+        {
+          "feature": "ank. ",
+          "contribution": 0.20507338643074036
+        },
+        {
+          "feature": ".' ",
+          "contribution": 0.4554474353790283
+        }
+      ]
+    }
+  ]
+}

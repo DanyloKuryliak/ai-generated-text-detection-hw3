@@ -1,0 +1,818 @@
+{
+  "selected_model": "ensemble",
+  "selection_metric": "Mean macro-F1 across three frozen group-aware development folds",
+  "selection_used_holdout": false,
+  "training_rows": 40000,
+  "holdout_rows": 54469,
+  "test_rows": 25000,
+  "class_order": [
+    "human",
+    "ai",
+    "fusion"
+  ],
+  "classical_component": "classical_blend",
+  "transformer_component": "transformer_chunks",
+  "transformer_weight": 0.25,
+  "ensemble_grid": [
+    {
+      "transformer_weight": 0.0,
+      "cv_mean": 0.8654249678574994,
+      "fold_scores": [
+        0.869062738484379,
+        0.8640141591398239,
+        0.8631980059482952
+      ]
+    },
+    {
+      "transformer_weight": 0.25,
+      "cv_mean": 0.8738856734880631,
+      "fold_scores": [
+        0.8774522864496649,
+        0.8742892428013475,
+        0.8699154912131771
+      ]
+    },
+    {
+      "transformer_weight": 0.5,
+      "cv_mean": 0.8736020415376449,
+      "fold_scores": [
+        0.8750959111133928,
+        0.8741169740076469,
+        0.871593239491895
+      ]
+    },
+    {
+      "transformer_weight": 0.75,
+      "cv_mean": 0.8499936131616824,
+      "fold_scores": [
+        0.8502595299629343,
+        0.8510636019276973,
+        0.8486577075944158
+      ]
+    },
+    {
+      "transformer_weight": 1.0,
+      "cv_mean": 0.7755254437666769,
+      "fold_scores": [
+        0.7812457914143113,
+        0.7802174470337951,
+        0.7651130928519244
+      ]
+    }
+  ],
+  "models": {
+    "word": {
+      "cv_mean": 0.845422492575718,
+      "cv_std": 0.002610105371025077,
+      "cv_fold_scores": [
+        0.8477024282788665,
+        0.8425754600094989,
+        0.8459895894387884
+      ],
+      "holdout_macro_f1": 0.851633588309063,
+      "holdout_report": {
+        "human": {
+          "precision": 0.7376425855513308,
+          "recall": 0.8432886157535786,
+          "f1-score": 0.7869356925551632,
+          "support": 13343.0
+        },
+        "ai": {
+          "precision": 0.9695582329317269,
+          "recall": 0.9898724834966584,
+          "f1-score": 0.9796100549818418,
+          "support": 24389.0
+        },
+        "fusion": {
+          "precision": 0.855047153335662,
+          "recall": 0.7313138555296648,
+          "f1-score": 0.7883550173901842,
+          "support": 16737.0
+        },
+        "accuracy": 0.8745157796177643,
+        "macro avg": {
+          "precision": 0.8540826572729064,
+          "recall": 0.854824984926634,
+          "f1-score": 0.851633588309063,
+          "support": 54469.0
+        },
+        "weighted avg": {
+          "precision": 0.8775605384229977,
+          "recall": 0.8745157796177643,
+          "f1-score": 0.8736435495928913,
+          "support": 54469.0
+        }
+      },
+      "holdout_confusion": [
+        [
+          11252,
+          155,
+          1936
+        ],
+        [
+          108,
+          24142,
+          139
+        ],
+        [
+          3894,
+          603,
+          12240
+        ]
+      ],
+      "holdout_slices": [
+        {
+          "slice": "lang",
+          "value": "de-DE",
+          "rows": 10552,
+          "macro_f1": 0.8968704513382851
+        },
+        {
+          "slice": "lang",
+          "value": "en-EN",
+          "rows": 43917,
+          "macro_f1": 0.8391778859414144
+        },
+        {
+          "slice": "domain",
+          "value": "arxiv_papers",
+          "rows": 2858,
+          "macro_f1": 0.8717387439383232
+        },
+        {
+          "slice": "domain",
+          "value": "blog_authorship_corpus",
+          "rows": 8110,
+          "macro_f1": 0.7175716808999765
+        },
+        {
+          "slice": "domain",
+          "value": "bundestag",
+          "rows": 10470,
+          "macro_f1": 0.8976092798417623
+        },
+        {
+          "slice": "domain",
+          "value": "cnn_news",
+          "rows": 8858,
+          "macro_f1": 0.8123503208274044
+        },
+        {
+          "slice": "domain",
+          "value": "euro_court_cases",
+          "rows": 5516,
+          "macro_f1": 0.8944240670823799
+        },
+        {
+          "slice": "domain",
+          "value": "gutenberg",
+          "rows": 1465,
+          "macro_f1": 0.6712795299677645
+        },
+        {
+          "slice": "domain",
+          "value": "house_of_commons",
+          "rows": 6372,
+          "macro_f1": 0.8676038306432208
+        },
+        {
+          "slice": "domain",
+          "value": "student_essays",
+          "rows": 10820,
+          "macro_f1": 0.8880594000157425
+        }
+      ]
+    },
+    "character": {
+      "cv_mean": 0.8630210385482755,
+      "cv_std": 0.001850887906636124,
+      "cv_fold_scores": [
+        0.8651368396532554,
+        0.8622245290936755,
+        0.8617017468978955
+      ],
+      "holdout_macro_f1": 0.8659367704317956,
+      "holdout_report": {
+        "human": {
+          "precision": 0.7678864008738394,
+          "recall": 0.8429888330960054,
+          "f1-score": 0.8036868993605087,
+          "support": 13343.0
+        },
+        "ai": {
+          "precision": 0.9743942397152219,
+          "recall": 0.9876583705768994,
+          "f1-score": 0.9809814701690084,
+          "support": 24389.0
+        },
+        "fusion": {
+          "precision": 0.8572185430463576,
+          "recall": 0.7733763517954233,
+          "f1-score": 0.8131419417658698,
+          "support": 16737.0
+        },
+        "accuracy": 0.8863757366575483,
+        "macro avg": {
+          "precision": 0.8664997278784731,
+          "recall": 0.868007851822776,
+          "f1-score": 0.8659367704317956,
+          "support": 54469.0
+        },
+        "weighted avg": {
+          "precision": 0.8878017976140753,
+          "recall": 0.8863757366575483,
+          "f1-score": 0.8859774927656939,
+          "support": 54469.0
+        }
+      },
+      "holdout_confusion": [
+        [
+          11248,
+          112,
+          1983
+        ],
+        [
+          128,
+          24088,
+          173
+        ],
+        [
+          3272,
+          521,
+          12944
+        ]
+      ],
+      "holdout_slices": [
+        {
+          "slice": "lang",
+          "value": "de-DE",
+          "rows": 10552,
+          "macro_f1": 0.8923417411685008
+        },
+        {
+          "slice": "lang",
+          "value": "en-EN",
+          "rows": 43917,
+          "macro_f1": 0.8587143653702173
+        },
+        {
+          "slice": "domain",
+          "value": "arxiv_papers",
+          "rows": 2858,
+          "macro_f1": 0.8644427803714976
+        },
+        {
+          "slice": "domain",
+          "value": "blog_authorship_corpus",
+          "rows": 8110,
+          "macro_f1": 0.7349891514714085
+        },
+        {
+          "slice": "domain",
+          "value": "bundestag",
+          "rows": 10470,
+          "macro_f1": 0.8928778041466666
+        },
+        {
+          "slice": "domain",
+          "value": "cnn_news",
+          "rows": 8858,
+          "macro_f1": 0.8972984498993762
+        },
+        {
+          "slice": "domain",
+          "value": "euro_court_cases",
+          "rows": 5516,
+          "macro_f1": 0.8987600733417883
+        },
+        {
+          "slice": "domain",
+          "value": "gutenberg",
+          "rows": 1465,
+          "macro_f1": 0.6768031933254933
+        },
+        {
+          "slice": "domain",
+          "value": "house_of_commons",
+          "rows": 6372,
+          "macro_f1": 0.8629792429857841
+        },
+        {
+          "slice": "domain",
+          "value": "student_essays",
+          "rows": 10820,
+          "macro_f1": 0.8872710977824202
+        }
+      ]
+    },
+    "classical_blend": {
+      "cv_mean": 0.8654249678574994,
+      "cv_std": 0.0031767212434130362,
+      "cv_fold_scores": [
+        0.869062738484379,
+        0.8640141591398239,
+        0.8631980059482952
+      ],
+      "holdout_macro_f1": 0.8699961396516257,
+      "holdout_report": {
+        "human": {
+          "precision": 0.7680741088809827,
+          "recall": 0.8575282919883085,
+          "f1-score": 0.8103399433427763,
+          "support": 13343.0
+        },
+        "ai": {
+          "precision": 0.9754598746715181,
+          "recall": 0.9892984542211652,
+          "f1-score": 0.9823304291181499,
+          "support": 24389.0
+        },
+        "fusion": {
+          "precision": 0.8696501988272561,
+          "recall": 0.770926689370855,
+          "f1-score": 0.8173180464939507,
+          "support": 16737.0
+        },
+        "accuracy": 0.8899190365161835,
+        "macro avg": {
+          "precision": 0.8710613941265857,
+          "recall": 0.8725844785267762,
+          "f1-score": 0.8699961396516257,
+          "support": 54469.0
+        },
+        "weighted avg": {
+          "precision": 0.8921448731560041,
+          "recall": 0.8899190365161835,
+          "f1-score": 0.8894944802356289,
+          "support": 54469.0
+        }
+      },
+      "holdout_confusion": [
+        [
+          11442,
+          108,
+          1793
+        ],
+        [
+          120,
+          24128,
+          141
+        ],
+        [
+          3335,
+          499,
+          12903
+        ]
+      ],
+      "holdout_slices": [
+        {
+          "slice": "lang",
+          "value": "de-DE",
+          "rows": 10552,
+          "macro_f1": 0.8973516851317687
+        },
+        {
+          "slice": "lang",
+          "value": "en-EN",
+          "rows": 43917,
+          "macro_f1": 0.8624824411425432
+        },
+        {
+          "slice": "domain",
+          "value": "arxiv_papers",
+          "rows": 2858,
+          "macro_f1": 0.8652040542932588
+        },
+        {
+          "slice": "domain",
+          "value": "blog_authorship_corpus",
+          "rows": 8110,
+          "macro_f1": 0.7418583208105113
+        },
+        {
+          "slice": "domain",
+          "value": "bundestag",
+          "rows": 10470,
+          "macro_f1": 0.8980003396897315
+        },
+        {
+          "slice": "domain",
+          "value": "cnn_news",
+          "rows": 8858,
+          "macro_f1": 0.8904778012402845
+        },
+        {
+          "slice": "domain",
+          "value": "euro_court_cases",
+          "rows": 5516,
+          "macro_f1": 0.905394016518544
+        },
+        {
+          "slice": "domain",
+          "value": "gutenberg",
+          "rows": 1465,
+          "macro_f1": 0.677645612564139
+        },
+        {
+          "slice": "domain",
+          "value": "house_of_commons",
+          "rows": 6372,
+          "macro_f1": 0.8697994946239387
+        },
+        {
+          "slice": "domain",
+          "value": "student_essays",
+          "rows": 10820,
+          "macro_f1": 0.8937384879565072
+        }
+      ]
+    },
+    "transformer_head": {
+      "cv_mean": 0.7482811286335963,
+      "cv_std": 0.004164296702569081,
+      "cv_fold_scores": [
+        0.7501052129480473,
+        0.7512221248018172,
+        0.7435160481509245
+      ],
+      "holdout_macro_f1": 0.7656966831551338,
+      "holdout_report": {
+        "human": {
+          "precision": 0.6022112444130793,
+          "recall": 0.767443603387544,
+          "f1-score": 0.6748607770125548,
+          "support": 13343.0
+        },
+        "ai": {
+          "precision": 0.9753945013827884,
+          "recall": 0.9833531510107015,
+          "f1-score": 0.979357657676052,
+          "support": 24389.0
+        },
+        "fusion": {
+          "precision": 0.7392249747612022,
+          "recall": 0.5687399175479476,
+          "f1-score": 0.6428716147767948,
+          "support": 16737.0
+        },
+        "accuracy": 0.8030622923130588,
+        "macro avg": {
+          "precision": 0.7722769068523566,
+          "recall": 0.773178890648731,
+          "f1-score": 0.7656966831551338,
+          "support": 54469.0
+        },
+        "weighted avg": {
+          "precision": 0.8114084989811964,
+          "recall": 0.8030622923130588,
+          "f1-score": 0.8013725876601179,
+          "support": 54469.0
+        }
+      },
+      "holdout_confusion": [
+        [
+          10240,
+          99,
+          3004
+        ],
+        [
+          52,
+          23983,
+          354
+        ],
+        [
+          6712,
+          506,
+          9519
+        ]
+      ],
+      "holdout_slices": [
+        {
+          "slice": "lang",
+          "value": "de-DE",
+          "rows": 10552,
+          "macro_f1": 0.721808691043794
+        },
+        {
+          "slice": "lang",
+          "value": "en-EN",
+          "rows": 43917,
+          "macro_f1": 0.7774796611682323
+        },
+        {
+          "slice": "domain",
+          "value": "arxiv_papers",
+          "rows": 2858,
+          "macro_f1": 0.6202959033013788
+        },
+        {
+          "slice": "domain",
+          "value": "blog_authorship_corpus",
+          "rows": 8110,
+          "macro_f1": 0.7534145287250968
+        },
+        {
+          "slice": "domain",
+          "value": "bundestag",
+          "rows": 10470,
+          "macro_f1": 0.7218232116129953
+        },
+        {
+          "slice": "domain",
+          "value": "cnn_news",
+          "rows": 8858,
+          "macro_f1": 0.7576932119268863
+        },
+        {
+          "slice": "domain",
+          "value": "euro_court_cases",
+          "rows": 5516,
+          "macro_f1": 0.7328915136314066
+        },
+        {
+          "slice": "domain",
+          "value": "gutenberg",
+          "rows": 1465,
+          "macro_f1": 0.6703942716539975
+        },
+        {
+          "slice": "domain",
+          "value": "house_of_commons",
+          "rows": 6372,
+          "macro_f1": 0.7845007134644172
+        },
+        {
+          "slice": "domain",
+          "value": "student_essays",
+          "rows": 10820,
+          "macro_f1": 0.8005598285729639
+        }
+      ]
+    },
+    "transformer_chunks": {
+      "cv_mean": 0.7755254437666769,
+      "cv_std": 0.009032007624011155,
+      "cv_fold_scores": [
+        0.7812457914143113,
+        0.7802174470337951,
+        0.7651130928519244
+      ],
+      "holdout_macro_f1": 0.8067640160805999,
+      "holdout_report": {
+        "human": {
+          "precision": 0.7636749449858535,
+          "recall": 0.7282470209098404,
+          "f1-score": 0.7455403383588445,
+          "support": 13343.0
+        },
+        "ai": {
+          "precision": 0.9856374247674631,
+          "recall": 0.886342203452376,
+          "f1-score": 0.933356361045746,
+          "support": 24389.0
+        },
+        "fusion": {
+          "precision": 0.6838439408469187,
+          "recall": 0.8095238095238095,
+          "f1-score": 0.7413953488372093,
+          "support": 16737.0
+        },
+        "accuracy": 0.8240099873322441,
+        "macro avg": {
+          "precision": 0.8110521035334117,
+          "recall": 0.8080376779620085,
+          "f1-score": 0.8067640160805999,
+          "support": 54469.0
+        },
+        "weighted avg": {
+          "precision": 0.838530576686827,
+          "recall": 0.8240099873322441,
+          "f1-score": 0.8283630501341154,
+          "support": 54469.0
+        }
+      },
+      "holdout_confusion": [
+        [
+          9717,
+          81,
+          3545
+        ],
+        [
+          53,
+          21617,
+          2719
+        ],
+        [
+          2954,
+          234,
+          13549
+        ]
+      ],
+      "holdout_slices": [
+        {
+          "slice": "lang",
+          "value": "de-DE",
+          "rows": 10552,
+          "macro_f1": 0.7721971745653339
+        },
+        {
+          "slice": "lang",
+          "value": "en-EN",
+          "rows": 43917,
+          "macro_f1": 0.8142977894752549
+        },
+        {
+          "slice": "domain",
+          "value": "arxiv_papers",
+          "rows": 2858,
+          "macro_f1": 0.5851848173903413
+        },
+        {
+          "slice": "domain",
+          "value": "blog_authorship_corpus",
+          "rows": 8110,
+          "macro_f1": 0.7678252574755269
+        },
+        {
+          "slice": "domain",
+          "value": "bundestag",
+          "rows": 10470,
+          "macro_f1": 0.7714795316905297
+        },
+        {
+          "slice": "domain",
+          "value": "cnn_news",
+          "rows": 8858,
+          "macro_f1": 0.8425895720721511
+        },
+        {
+          "slice": "domain",
+          "value": "euro_court_cases",
+          "rows": 5516,
+          "macro_f1": 0.7595156451945941
+        },
+        {
+          "slice": "domain",
+          "value": "gutenberg",
+          "rows": 1465,
+          "macro_f1": 0.5863023576624028
+        },
+        {
+          "slice": "domain",
+          "value": "house_of_commons",
+          "rows": 6372,
+          "macro_f1": 0.8015337082718278
+        },
+        {
+          "slice": "domain",
+          "value": "student_essays",
+          "rows": 10820,
+          "macro_f1": 0.8467416546477334
+        }
+      ]
+    },
+    "ensemble": {
+      "cv_mean": 0.8738856734880631,
+      "cv_std": 0.003784570220270026,
+      "cv_fold_scores": [
+        0.8774522864496649,
+        0.8742892428013475,
+        0.8699154912131771
+      ],
+      "holdout_macro_f1": 0.8784326253915178,
+      "holdout_report": {
+        "human": {
+          "precision": 0.7811690966071672,
+          "recall": 0.8593269879337481,
+          "f1-score": 0.8183862103422433,
+          "support": 13343.0
+        },
+        "ai": {
+          "precision": 0.9813725092325798,
+          "recall": 0.9915125671409242,
+          "f1-score": 0.9864164797063023,
+          "support": 24389.0
+        },
+        "fusion": {
+          "precision": 0.873993399339934,
+          "recall": 0.7911214674075402,
+          "f1-score": 0.8304951861260075,
+          "support": 16737.0
+        },
+        "accuracy": 0.8975564082322055,
+        "macro avg": {
+          "precision": 0.8788450017265603,
+          "recall": 0.8806536741607375,
+          "f1-score": 0.8784326253915177,
+          "support": 54469.0
+        },
+        "weighted avg": {
+          "precision": 0.8993346841038994,
+          "recall": 0.8975564082322055,
+          "f1-score": 0.8973441160723449,
+          "support": 54469.0
+        }
+      },
+      "holdout_confusion": [
+        [
+          11466,
+          91,
+          1786
+        ],
+        [
+          84,
+          24182,
+          123
+        ],
+        [
+          3128,
+          368,
+          13241
+        ]
+      ],
+      "holdout_slices": [
+        {
+          "slice": "lang",
+          "value": "de-DE",
+          "rows": 10552,
+          "macro_f1": 0.9028044443673017
+        },
+        {
+          "slice": "lang",
+          "value": "en-EN",
+          "rows": 43917,
+          "macro_f1": 0.8717622378511148
+        },
+        {
+          "slice": "domain",
+          "value": "arxiv_papers",
+          "rows": 2858,
+          "macro_f1": 0.8538995245188686
+        },
+        {
+          "slice": "domain",
+          "value": "blog_authorship_corpus",
+          "rows": 8110,
+          "macro_f1": 0.7612597744134728
+        },
+        {
+          "slice": "domain",
+          "value": "bundestag",
+          "rows": 10470,
+          "macro_f1": 0.9031966010819622
+        },
+        {
+          "slice": "domain",
+          "value": "cnn_news",
+          "rows": 8858,
+          "macro_f1": 0.9003339506626382
+        },
+        {
+          "slice": "domain",
+          "value": "euro_court_cases",
+          "rows": 5516,
+          "macro_f1": 0.9077665972576595
+        },
+        {
+          "slice": "domain",
+          "value": "gutenberg",
+          "rows": 1465,
+          "macro_f1": 0.6851889007829767
+        },
+        {
+          "slice": "domain",
+          "value": "house_of_commons",
+          "rows": 6372,
+          "macro_f1": 0.8783591259025699
+        },
+        {
+          "slice": "domain",
+          "value": "student_essays",
+          "rows": 10820,
+          "macro_f1": 0.9007600935465039
+        }
+      ]
+    }
+  },
+  "submission_files": [
+    {
+      "model": "ensemble",
+      "file": "ensemble-cv-selected.csv",
+      "rows": 25000,
+      "sha256": "ad2d27e977bd78865f393ca3c44c3f39b5f83c69e4eee2dd864fd117e89f2d51",
+      "cv_macro_f1": 0.8738856734880631
+    },
+    {
+      "model": "character",
+      "file": "character-cv-selected.csv",
+      "rows": 25000,
+      "sha256": "1894be5d3fae29a0fc3ba882f32896bad3e4286469f76bc83feb52889fed3350",
+      "cv_macro_f1": 0.8630210385482755
+    }
+  ],
+  "limitations": [
+    "CV is used for model/weight selection; selected CV scores are not nested unbiased estimates.",
+    "Holdout is a shared comparison set; original source families may remain undetected by lexical grouping.",
+    "Transformer has a fixed one-epoch budget; three 254-token windows do not cover every long document."
+  ]
+}

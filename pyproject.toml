@@ -1,0 +1,19 @@
+[project]
+name = "ucu-ai-hw3-text-detection"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "pandas==2.3.3",
+  "numpy>=2.0,<3",
+  "scikit-learn==1.9.1",
+  "matplotlib==3.11.2",
+  "datasketch>=1.6,<3",
+  "nbformat>=5.10,<6",
+]
+
+[project.optional-dependencies]
+local-gpu = ["torch==2.10.0", "transformers==4.57.3"]
+notebook = ["nbclient>=0.10,<1", "ipykernel>=6,<8"]
+deliverable = [
+    "pypdf>=6,<8",
+]

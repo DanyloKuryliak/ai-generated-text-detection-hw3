@@ -1,0 +1,11 @@
+slice,value,rows,macro_f1
+lang,de-DE,10552,0.8968704513382851
+lang,en-EN,43917,0.8391778859414144
+domain,arxiv_papers,2858,0.8717387439383231
+domain,blog_authorship_corpus,8110,0.7175716808999765
+domain,bundestag,10470,0.8976092798417623
+domain,cnn_news,8858,0.8123503208274044
+domain,euro_court_cases,5516,0.8944240670823799
+domain,gutenberg,1465,0.6712795299677645
+domain,house_of_commons,6372,0.8676038306432208
+domain,student_essays,10820,0.8880594000157425
