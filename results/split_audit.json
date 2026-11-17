@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "folds": 5,
+  "holdout_fold": 0,
+  "manifest_sha256": "410ff2df025ec00051bab0b0656a01a4711fb90f4d9f48100e1b8a1e986b9769",
+  "grouping": "64-permutation MinHash LSH candidates; exact word-trigram Jaccard >= 0.65",
+  "limitations": "Approximate lexical grouping; original source IDs are unavailable. Rewrites with little lexical overlap and some LSH misses may remain in different groups.",
+  "candidate_pairs_checked": 89918,
+  "verified_pairs": 35600,
+  "cross_domain_pairs": 104,
+  "cross_language_pairs": 5,
+  "groups": 244376,
+  "groups_with_multiple_rows": 20650,
+  "rows_in_multirow_groups": 48626,
+  "largest_group": 53,
+  "fold_counts": {
+    "0": 54469,
+    "1": 54469,
+    "2": 54469,
+    "3": 54469,
+    "4": 54476
+  },
+  "group_overlap_between_folds": 0
+}

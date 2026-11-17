@@ -1,0 +1,7 @@
+{
+  "gpu": "Tesla T4",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "memory_bytes": 15637086208,
+  "bundle_sha256": "af8183f62ed6d5388288cead14a028cb7ced3cf39e97950904d617523192ffe7"
+}

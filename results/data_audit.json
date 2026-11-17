@@ -1,0 +1,253 @@
+{
+  "train": {
+    "columns": [
+      "id",
+      "text",
+      "lang",
+      "domain",
+      "label"
+    ],
+    "rows": 272352,
+    "unique_ids": 272352,
+    "missing": {},
+    "counts": {
+      "label": {
+        "ai": 121940,
+        "human": 66730,
+        "fusion": 83682
+      },
+      "lang": {
+        "en-EN": 219581,
+        "de-DE": 52771
+      },
+      "domain": {
+        "cnn_news": 44285,
+        "bundestag": 52343,
+        "blog_authorship_corpus": 40547,
+        "euro_court_cases": 27578,
+        "house_of_commons": 31859,
+        "student_essays": 54106,
+        "arxiv_papers": 14290,
+        "gutenberg": 7344
+      }
+    },
+    "duplicate_text_extra_rows": 0,
+    "language_domain_label": [
+      {
+        "lang": "de-DE",
+        "domain": "bundestag",
+        "label": "ai",
+        "count": 19977
+      },
+      {
+        "lang": "de-DE",
+        "domain": "bundestag",
+        "label": "fusion",
+        "count": 17887
+      },
+      {
+        "lang": "de-DE",
+        "domain": "bundestag",
+        "label": "human",
+        "count": 14479
+      },
+      {
+        "lang": "de-DE",
+        "domain": "gutenberg",
+        "label": "ai",
+        "count": 360
+      },
+      {
+        "lang": "de-DE",
+        "domain": "gutenberg",
+        "label": "fusion",
+        "count": 37
+      },
+      {
+        "lang": "de-DE",
+        "domain": "gutenberg",
+        "label": "human",
+        "count": 31
+      },
+      {
+        "lang": "en-EN",
+        "domain": "arxiv_papers",
+        "label": "ai",
+        "count": 12050
+      },
+      {
+        "lang": "en-EN",
+        "domain": "arxiv_papers",
+        "label": "fusion",
+        "count": 1833
+      },
+      {
+        "lang": "en-EN",
+        "domain": "arxiv_papers",
+        "label": "human",
+        "count": 407
+      },
+      {
+        "lang": "en-EN",
+        "domain": "blog_authorship_corpus",
+        "label": "ai",
+        "count": 15684
+      },
+      {
+        "lang": "en-EN",
+        "domain": "blog_authorship_corpus",
+        "label": "fusion",
+        "count": 12397
+      },
+      {
+        "lang": "en-EN",
+        "domain": "blog_authorship_corpus",
+        "label": "human",
+        "count": 12466
+      },
+      {
+        "lang": "en-EN",
+        "domain": "cnn_news",
+        "label": "ai",
+        "count": 19488
+      },
+      {
+        "lang": "en-EN",
+        "domain": "cnn_news",
+        "label": "fusion",
+        "count": 11402
+      },
+      {
+        "lang": "en-EN",
+        "domain": "cnn_news",
+        "label": "human",
+        "count": 13395
+      },
+      {
+        "lang": "en-EN",
+        "domain": "euro_court_cases",
+        "label": "ai",
+        "count": 11141
+      },
+      {
+        "lang": "en-EN",
+        "domain": "euro_court_cases",
+        "label": "fusion",
+        "count": 10160
+      },
+      {
+        "lang": "en-EN",
+        "domain": "euro_court_cases",
+        "label": "human",
+        "count": 6277
+      },
+      {
+        "lang": "en-EN",
+        "domain": "gutenberg",
+        "label": "ai",
+        "count": 6359
+      },
+      {
+        "lang": "en-EN",
+        "domain": "gutenberg",
+        "label": "fusion",
+        "count": 341
+      },
+      {
+        "lang": "en-EN",
+        "domain": "gutenberg",
+        "label": "human",
+        "count": 216
+      },
+      {
+        "lang": "en-EN",
+        "domain": "house_of_commons",
+        "label": "ai",
+        "count": 15298
+      },
+      {
+        "lang": "en-EN",
+        "domain": "house_of_commons",
+        "label": "fusion",
+        "count": 9608
+      },
+      {
+        "lang": "en-EN",
+        "domain": "house_of_commons",
+        "label": "human",
+        "count": 6953
+      },
+      {
+        "lang": "en-EN",
+        "domain": "student_essays",
+        "label": "ai",
+        "count": 21583
+      },
+      {
+        "lang": "en-EN",
+        "domain": "student_essays",
+        "label": "fusion",
+        "count": 20017
+      },
+      {
+        "lang": "en-EN",
+        "domain": "student_essays",
+        "label": "human",
+        "count": 12506
+      }
+    ],
+    "word_lengths": {
+      "min": 20,
+      "median": 463.0,
+      "max": 3000,
+      "over_512_words": 118266
+    }
+  },
+  "test": {
+    "columns": [
+      "id",
+      "text",
+      "lang",
+      "domain"
+    ],
+    "rows": 25000,
+    "unique_ids": 25000,
+    "missing": {},
+    "counts": {
+      "label": {},
+      "lang": {
+        "en-EN": 21317,
+        "de-DE": 3683
+      },
+      "domain": {
+        "student_essays": 3976,
+        "blog_authorship_corpus": 4446,
+        "cnn_news": 4937,
+        "arxiv_papers": 1683,
+        "bundestag": 3581,
+        "gutenberg": 1845,
+        "euro_court_cases": 1591,
+        "house_of_commons": 2941
+      }
+    },
+    "duplicate_text_extra_rows": 0,
+    "language_domain_label": [],
+    "word_lengths": {
+      "min": 20,
+      "median": 458.0,
+      "max": 3000,
+      "over_512_words": 10869
+    }
+  },
+  "overlapping_ids": 0,
+  "overlapping_normalized_texts": 0,
+  "sample_submission": {
+    "columns": [
+      "id",
+      "label"
+    ],
+    "rows": 25000,
+    "unique_ids": 25000,
+    "matches_test_ids": true
+  }
+}

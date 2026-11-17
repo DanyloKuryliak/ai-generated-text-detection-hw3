@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "model_scores_recomputed": 6,
+  "training_rows": 40000,
+  "holdout_rows": 54469,
+  "test_rows": 25000,
+  "group_overlap": 0,
+  "cv_isolation_checked": true,
+  "submission_ids_order_and_checksums_checked": true,
+  "exact_linear_attributions_checked": 15,
+  "executed_notebook_has_errors": false
+}

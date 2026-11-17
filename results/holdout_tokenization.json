@@ -1,0 +1,11 @@
+{
+  "rows": 54469,
+  "sequence_length": 256,
+  "content_tokens_per_chunk": 254,
+  "median_full_tokens": 665.0,
+  "max_full_tokens": 11914,
+  "fraction_exceeding_one_chunk": 0.8489415998090657,
+  "mean_head_coverage": 0.4820499560653765,
+  "mean_three_chunk_coverage": 0.8676550243975027,
+  "limitations": "Up to three non-overlapping/overlapping windows; very long texts are not fully covered."
+}
