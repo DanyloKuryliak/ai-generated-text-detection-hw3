@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-local-gpu = ["torch==2.10.0", "transformers==4.57.3"]
+local-gpu = ["torch==2.13.0", "transformers==5.10.1"]
 notebook = ["nbclient>=0.10,<1", "ipykernel>=6,<8"]
 deliverable = [
     "pypdf>=6,<8",
