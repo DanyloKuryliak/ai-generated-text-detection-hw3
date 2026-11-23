@@ -4,3 +4,4 @@
 |---|---|---|---|---|
 | Char TF-IDF | 0.8630 | 0.8659 | 0.86275 | `submissions/character-cv-selected.csv` |
 | Ensemble (classical blend + DistilBERT chunks, w=0.25) | 0.8739 | 0.8784 | 0.87518 | `submissions/ensemble-cv-selected.csv` |
+| Full-data ensemble (word + character TF-IDF + DistilBERT) | Not measured | Not measured | 0.91147 | `full-data-ensemble.csv` (local) |

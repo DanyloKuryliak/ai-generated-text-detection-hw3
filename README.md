@@ -2,9 +2,13 @@
 
 Classification of English and German documents into `human`, `ai`, and `fusion`, evaluated with macro-F1. The study compares word TF-IDF, character TF-IDF, multilingual DistilBERT, three-window inference, and probability ensembles.
 
+## Latest result
+
+The ensemble trained on all 272,352 labeled documents achieved **0.91147 public macro-F1** on Kaggle, compared with 0.87518 for the earlier ensemble. It combines word TF-IDF (18.75%), character TF-IDF (56.25%), and multilingual DistilBERT (25%). The character vocabulary came from the earlier 40,000-document model; its IDF weights and classifier were refitted on all labeled data. DistilBERT was trained for one epoch on a Colab Tesla T4. The full-data fit has no separate cross-validation or holdout score.
+
 ## Evaluation
 
-All systems use the same 40,000 development documents and three group-aware CV folds. A separate fixed holdout contains 54,469 documents. Detected similar-text groups never cross folds or the holdout boundary. Hyperparameters and ensemble weights are selected using development CV, not holdout labels. Selected CV scores are model-selection estimates, not nested unbiased estimates.
+The original model comparisons use the same 40,000 development documents and three group-aware CV folds. A separate fixed holdout contains 54,469 documents. Detected similar-text groups never cross folds or the holdout boundary. Hyperparameters and ensemble weights are selected using development CV, not holdout labels. Selected CV scores are model-selection estimates, not nested unbiased estimates.
 
 Related texts are approximated using 64-permutation MinHash LSH candidates followed by exact word-trigram Jaccard verification at 0.65. This can miss substantial paraphrases and some candidates. Rare language/domain/class combinations cannot be balanced perfectly across folds.
 
